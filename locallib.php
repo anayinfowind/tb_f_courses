@@ -228,9 +228,9 @@ function block_tb_f_courses_get_sorted_courses($showallcourses = false, $fccours
 
     $courses = array();
 
-    foreach ($allcourses as $courseid => $course_all) {
-        if (in_array($course_all->id, $fccourses)) {
-            $courses[$courseid] = $course_all;
+    foreach ($allcourses as $courseid => $coursesing) {
+        if (in_array($coursesing->id, $fccourses)) {
+            $courses[$courseid] = $coursesing;
         }
     }
 

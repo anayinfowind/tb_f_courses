@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -18,21 +17,25 @@
 /**
  * Form for editing tag block instances.
  *
- * @package   block_tb_featured_courses
- * @copyright 2009 Tim Hunt
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
-/**
- * Form for editing tag block instances.
- *
  * @package   block_tb_f_courses
  * @copyright  2020 Leeloo LXP (https://leeloolxp.com)
  * @author     Leeloo LXP <info@leeloolxp.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+/**
+ * Edit Form class
+ *
+ * @copyright  2020 Leeloo LXP (https://leeloolxp.com)
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class block_tb_f_courses_edit_form extends block_edit_form {
+
+    /**
+     * If this is passed as mynumber then showallcourses, irrespective of limit by user.
+     *
+     * @param object $mform Edit Form
+     */
     protected function specific_definition($mform) {
 
         $courses = get_courses();
